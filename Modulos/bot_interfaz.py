@@ -14,9 +14,6 @@ class TelegramBot:
     
     def __init__(self):
 
-       
-
-
         self.TELEGRAM_BOT_KEY=os.getenv('TELEGRAM_BOT_KEY', 'NO BOT KEY')
         self.ADMIN_PASSWORD=os.getenv('ADMIN_PASSWORD', 'NO PASSWORD')
         self.bot = telebot.TeleBot(self.TELEGRAM_BOT_KEY)
